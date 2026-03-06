@@ -1,0 +1,29 @@
+services:
+- type: web
+  name: fetch-agents-bureau
+  env: docker
+  plan: starter
+  healthCheckPath: /health
+  envVars:
+  - key: WEAPON_ADDR
+    value: "" # if you later split services, put addresses here
+  - key: ROBBERY_ADDR
+    value: ""
+  - key: FACE_ADDR
+    value: ""
+  - key: TRANSCRIPT_ADDR
+    value: ""
+  - key: VOICE_ADDR
+    value: ""
+  - key: CHUNK_ADDR
+    value: ""
+  - key: TS_ADDR
+    value: ""
+  - key: ASR_ENDPOINT
+    value: "" # if transcript proxies to external ASR
+  - key: VOICE_TTS_ENDPOINT
+    value: ""
+  - key: REKA_ENDPOINT
+    value: ""
+  - key: REKA_API_KEY
+    sync: false # set in dashboard
