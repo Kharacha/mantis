@@ -45,6 +45,8 @@ backend/.tmp/
 tmp/
 temp/
 
+agents/run_vid_agent.ps1
+
 # os
 .DS_Store
 Thumbs.db
